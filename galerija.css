@@ -1,0 +1,143 @@
+#containerGalerija {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+.imageHolder {
+    width: 93vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+}
+
+.popUpImgHolder {
+    width: 93vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.holderImg {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.slikaImg {
+    width: 150px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.popUpDiv {
+    display: flex;
+    margin: auto;
+    /* width: 80%; */
+    /* height: 80vh; */
+
+}
+
+.slikaVeca {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 20px 0;
+}
+
+.slikaVeca:focus {
+    outline: 0px solid transparent;
+}
+
+.navBtns {
+    width: 30px;
+    height: 44px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#btnExit {
+    width: 60px;
+    height: 44px;
+}
+
+.delBtnImg {
+    width: 70px;
+    height: 20px;
+}
+.frameDiv {
+    width: 160px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tumbDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 455px){
+
+    .imageHolder {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .popUpImgHolder {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navBtns {
+        width: 16px;
+        height: 23px;
+        margin: 5px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #btnExit {
+        width: 32px;
+        height: 23px;
+    }
+
+    .mobSlikaVeca {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+}

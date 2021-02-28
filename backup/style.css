@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+.loginSignin {
+    position: absolute;
+    right: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 6px 8px 6px;
+    font-size: 15px;
+}
+
+a:hover {
+    -webkit-transform: scale(1.1);
+}
+
+#container {
+    background-color: aqua;
+    width: 100vw;
+    height: 92vh;
+}

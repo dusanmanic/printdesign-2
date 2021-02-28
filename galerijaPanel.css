@@ -1,0 +1,3 @@
+button:not(.headerBtns) {
+    margin: 15px;
+}

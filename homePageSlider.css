@@ -1,0 +1,27 @@
+#containerLandingPage {
+    display: flex;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: auto;
+    transition: background-image 1.2s ease-in-out;
+}
+
+
+.slideHolder {
+    /* border-radius: 20px 0 20px 0; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: auto;
+    transition: background-image 1.2s ease-in-out;
+}
+
+@media only screen and (max-width: 455px){
+
+    #containerLandingPage {
+        display: flex;
+        width: 100vw;
+    }
+
+}

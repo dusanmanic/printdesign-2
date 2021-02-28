@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print design</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <header>
+        <ul class="responseButton">
+            <li><button class="menuBtn responseBtn" onclick="location.href = '../index.html';">POČETNA</button></li>
+        </ul>
+        <ul class="headBtns">
+            <li><button class="headerBtns" onclick="location.href = '../index.html';">POČETNA</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../onama.html';">O NAMA</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../galerija.html';">GALERIJA</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../prodaja.html';">PRODAJA</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../video.html';">VIDEO</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../saradnici.html';">SARADNICI</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../reference.html';">REFERENCE</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../kontakt.html';">KONTAKT</button></li>
+        </ul>
+        <ul class="loginSignin">
+            <li><button class="headerBtns" id="login" onclick="location.href = 'login.html'">Log in</button></li>
+            <li><button class="headerBtns removeLi" id="logout">Log out</button></li>
+            <li><button class="headerBtns removeLi" id="panel" onclick="location.href = '../adminpanel.html'">Panel</button></li>
+            <li><button class="headerBtns" id="signin" onclick="">Sign in</button></li>
+        </ul>
+    </header>
+
+    <div id="loginContainer">
+
+        <div class="loginDiv">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br>
+            <button onclick="logging()"><p class="logInBtn">Log in</p></button>
+            <p class="redirekt"></p>
+        </div>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyC9r0z8xOMa1w40i4kvLWKQcAyaEKYNR_o",
+        authDomain: "printdesignwebsite.firebaseapp.com",
+        projectId: "printdesignwebsite",
+        storageBucket: "printdesignwebsite.appspot.com",
+        messagingSenderId: "334045267218",
+        appId: "1:334045267218:web:5c1869a7f78bb7fa335fcb",
+        measurementId: "G-KD1HSGHBLS"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    let db = firebase.firestore();
+    let storage = firebase.storage()
+    </script>
+    let db = firebase.firestore();
+    let storage = firebase.storage()
+    </script>
+    <script src="logger.js"></script>
+</body>
+</html>

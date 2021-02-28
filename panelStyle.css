@@ -1,0 +1,199 @@
+body {
+    display: none;
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    background-color: rgba(120, 120, 120);
+}
+
+.headBtns {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+li:not(.loginSignInList) {
+    margin: 2px;
+}
+
+.loginSignin {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-top: 1px;
+    margin-right: 15px;
+}
+
+.loginSignInBtns {
+    background: none;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.headerBtns {
+    width: 150px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgba(120, 120, 120);
+    cursor: pointer;
+}
+
+.responseButton {
+    margin: auto;
+    display: none;
+}
+
+#menuBtn {
+    background: none;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.headerBtns:focus:hover:active, #menuBtn:focus:hover {
+    outline: none;
+    background: none;
+}
+
+.spanDesno {
+    position: absolute;
+    right: 0;
+    margin-right: 14px;
+    color: white;
+    font-size: 15px;
+}
+
+.spanLevo {
+    position: absolute;
+    left: 0;
+    margin-left: 14px;
+    color: white;
+    font-size: 15px;
+}
+
+
+.logInBtn {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
+.redirect {
+    color: black;
+    font-size: 50px;
+}
+
+.removeLi {
+    display: none;
+}
+#loginContainer {
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+}
+.loginDiv {
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+}
+
+@media only screen and (max-width: 770px){
+    
+    .headBtns {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 455px){
+
+    header {
+        width: 100vw;
+        height: 7vh;
+    }
+
+    .headBtns {
+        width: 100vw;
+        height: 280px;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgba(106, 106, 106);
+    }
+
+    .headerBtns {
+        background: none;
+        color: white;
+        font-size: 14px;
+        padding: 0px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .responseButton {
+        margin: auto;
+        display: block;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .hoverBtns {
+        height: 280px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    .responseBtn:focus:hover:active, .headerBtns:focus:hover:active {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .hoverDiv{
+        /* margin-top: -280px; */
+        width: 100vw;
+        height: 280px;
+        position: absolute;
+        z-index: 1;
+        transition-property: all;
+        transition-duration: .5s;          
+    }
+}

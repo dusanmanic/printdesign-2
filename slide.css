@@ -1,0 +1,18 @@
+#containerSlide {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadInput, .slideImages {
+    width: 80vw;
+    height: 25vh;
+    margin: 25px 0 0 25px;
+}
+
+.slideImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
