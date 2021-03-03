@@ -49,7 +49,7 @@ db.collection(`${desktopOrMobileView}`)
             // console.log(value)  
             setTimeout(() => {                    
                 slideHolder.style.backgroundImage = `url('${niz[i].src}')`
-            },3300 * value)
+            },4300 * value)
         }
 
         if(value <= 20) {

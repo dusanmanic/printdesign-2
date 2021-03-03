@@ -10,8 +10,8 @@ btnsDiv.classList.add('hoverDiv')
 btnsUl.classList.add('hoverBtns')
 btnsDiv.appendChild(btnsUl)
 
-let nizBtns = ['Početna', 'Slide', 'Galerija', 'Prodaja', 'Video', 'Saradnici', 'Reference']
-let nizHref = ['index', 'slide', 'galerijaPanel', 'prodajaPanel', 'videoPanel', 'saradniciPanel', 'referencePanel']
+let nizBtns = ['Početna', 'Slide', 'Galerija','Reference']
+let nizHref = ['index', 'slide', 'galerijaPanel', 'referencePanel']
 let nizBtnOpis = ['Početna strana', 'Izaberite fotografije za početnu stranu, desktop ili mobilna verzija', 'Izaberite fotografije za galeriju, dodajte nove kategorije', '', '', '', '']
 let counterShowHide = 0
 

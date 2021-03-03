@@ -10,11 +10,14 @@ body {
 
 header {
     position: relative;
+    margin-top: -40px;
     z-index: 10;
     display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 7vh;
-    background-color: rgba(120, 120, 120);
+    /* background-color: rgba(120, 120, 120); */
+    background-color: rgb(200, 0, 0);
 }
 
 .headBtns {
@@ -35,11 +38,12 @@ li {
 }
 
 .loginSignin {
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-right: 15px;
 }
 
@@ -62,6 +66,24 @@ li {
     font-size: 14px;
     border: none;
     cursor: pointer;
+}
+
+.logoicon, .logoiconspan {
+    color: white;
+    margin: 2px;
+}
+
+.logoiconspan {
+    display: block;
+}
+
+.divfollowus {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 11;
+    height: 40px;
+    width: 150px;
 }
 
 .headerBtns:focus:hover, #menuBtn:focus:hover {
@@ -171,5 +193,9 @@ li {
         z-index: 1;
         transition-property: all;
         transition-duration: .5s;          
+    }
+    
+    .logoiconspan {
+        display: none;
     }
 }

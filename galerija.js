@@ -80,6 +80,7 @@ db.collection('galerijaKategorije')
             
             nameCategory = kategorije.name.charAt(0).toUpperCase() + kategorije.name.slice(1)
 
+            /*
             let tumbImg = document.createElement('IMG')
             let tumbSpan = document.createElement('SPAN')
             let tumbDiv = document.createElement('DIV')
@@ -94,6 +95,22 @@ db.collection('galerijaKategorije')
             tumbDiv.appendChild(tumbImg)
             tumbDiv.appendChild(tumbSpan)
             imageHolder.appendChild(tumbDiv)
+            */           
+
+            let tumbDiv = document.createElement('DIV')
+            let tumbSpan = document.createElement('SPAN')
+
+            tumbDiv.setAttribute('class', 'tumbDiv')
+            tumbSpan.innerHTML = nameCategory
+            tumbSpan.setAttribute('class', 'spanTumbGalerija')
+            tumbDiv.setAttribute('id', kategorije.id)
+            tumbDiv.setAttribute('class', 'holderImg')
+            tumbDiv.style.backgroundImage = `url("${kategorije.tumbUrl}")`
+
+            console.log(kategorije.tumbUrl)
+            tumbDiv.appendChild(tumbSpan)
+            imageHolder.appendChild(tumbDiv)
+
         })
     }
 })
@@ -104,9 +121,9 @@ db.collection('galerijaKategorije')
             btn.addEventListener('click', event => {
                                 
                 // console.log(event)
-                // console.log(event.path[0].id)
+                // console.log(event.path[1].id)
                 imageHolder.innerHTML = ""
-                let path = event.path[0].id
+                let path = event.path[1].id // promenjeno 0 -> 1
                 // console.log(loadedImages)
                 // console.log(imgsToLoad)
                 galerija(path, loadedImages, imgsToLoad)

@@ -2,8 +2,21 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    height: 93vh;
+    background-image: url("imgs/background.jpg");    
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     
+}
+
+.spanTumbGalerija {
+    font-size: 18px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: 5px;
 }
 
 .imageHolder {
@@ -13,6 +26,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 0;
+    padding: auto;
 }
 
 .popUpImgHolder {
@@ -25,6 +39,8 @@
 
 
 .holderImg {
+    display: flex;
+    justify-content: center;
     width: 150px;
     height: 100px;
     margin: 10px;

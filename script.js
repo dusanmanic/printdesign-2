@@ -10,7 +10,7 @@ function calcVH() {
 
 let login = document.getElementById('login')
 let logOut = document.getElementById('logout')
-let signin = document.getElementById('signin')
+// let signin = document.getElementById('signin')
 let panel = document.getElementById('panel')
 
 //Proverava da li je korisnik logovan i prema tome dodaje menja buttons
@@ -21,14 +21,14 @@ function btnCheck() {
 
     if(logBtn === "true") {
         login.classList.add("removeLi")
-        signin.classList.add("removeLi")
+        // signin.classList.add("removeLi")
         logOut.classList.remove("removeLi")
         panel.classList.remove("removeLi")
     } else {
         logOut.classList.add("removeLi")
         panel.classList.add("removeLi")
         login.classList.remove("removeLi")
-        signin.classList.remove("removeLi") 
+        // signin.classList.remove("removeLi") 
 
     }
 }
@@ -73,7 +73,7 @@ function logout () {
     logOut.classList.add("removeLi")
     panel.classList.add("removeLi")
     login.classList.remove("removeLi")
-    signin.classList.remove("removeLi")
+    // signin.classList.remove("removeLi")
 
     db.collection('login_info')
     .get()
