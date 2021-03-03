@@ -174,7 +174,7 @@ li {
     }
 
     .hoverBtns {
-        height: 280px;
+        height: 180px;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
@@ -186,9 +186,9 @@ li {
     }
 
     .hoverDiv{
-        margin-top: -280px;
+        margin-top: -180px;
         width: 100vw;
-        height: 280px;
+        height: 180px;
         position: absolute;
         z-index: 1;
         transition-property: all;

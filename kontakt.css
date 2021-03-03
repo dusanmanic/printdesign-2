@@ -1,6 +1,7 @@
 #containerKontakt {
     height: 93vh;
-    background-image: url("imgs/background.jpg");    
+    background-image: url("imgs/background.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
