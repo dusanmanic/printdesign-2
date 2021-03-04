@@ -27,7 +27,7 @@ function btnCheck() {
         logOut.classList.add("removeLi")
         panel.classList.add("removeLi")
         login.classList.remove("removeLi")
-        signin.classList.remove("removeLi") 
+        // signin.classList.remove("removeLi") 
 
     }
 }

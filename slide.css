@@ -1,8 +1,9 @@
 #containerSlide {
     width: 100vw;
-    height: 75vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .uploadInput, .slideImages {

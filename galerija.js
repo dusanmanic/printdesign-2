@@ -78,24 +78,7 @@ db.collection('galerijaKategorije')
         allDocs.forEach(x => {
             let kategorije = x.data()
             
-            nameCategory = kategorije.name.charAt(0).toUpperCase() + kategorije.name.slice(1)
-
-            /*
-            let tumbImg = document.createElement('IMG')
-            let tumbSpan = document.createElement('SPAN')
-            let tumbDiv = document.createElement('DIV')
-
-            tumbDiv.setAttribute('class', 'tumbDiv')
-
-            tumbSpan.innerHTML = nameCategory
-            tumbImg.setAttribute('id', kategorije.id)
-            tumbImg.setAttribute('class', 'holderImg')
-            tumbImg.setAttribute('src', kategorije.tumbUrl)
-
-            tumbDiv.appendChild(tumbImg)
-            tumbDiv.appendChild(tumbSpan)
-            imageHolder.appendChild(tumbDiv)
-            */           
+            nameCategory = kategorije.name.charAt(0).toUpperCase() + kategorije.name.slice(1)       
 
             let tumbDiv = document.createElement('DIV')
             let tumbSpan = document.createElement('SPAN')
@@ -106,8 +89,7 @@ db.collection('galerijaKategorije')
             tumbDiv.setAttribute('id', kategorije.id)
             tumbDiv.setAttribute('class', 'holderImg')
             tumbDiv.style.backgroundImage = `url("${kategorije.tumbUrl}")`
-
-            console.log(kategorije.tumbUrl)
+            
             tumbDiv.appendChild(tumbSpan)
             imageHolder.appendChild(tumbDiv)
 
@@ -119,8 +101,6 @@ db.collection('galerijaKategorije')
 
         galerijaBtns.forEach(btn =>{
             btn.addEventListener('click', event => {
-                                
-                // console.log(event)
                 // console.log(event.path[1].id)
                 imageHolder.innerHTML = ""
                 let path = event.path[1].id // promenjeno 0 -> 1
@@ -132,8 +112,7 @@ db.collection('galerijaKategorije')
                     //console.log(containerGalerija.scrollHeight - containerGalerija.scrollTop)
                     //console.log(containerGalerija.scrollHeight)
                     //console.log(containerGalerija.scrollTop)
-                    //console.log(containerGalerija.clientHeight)
-                    
+                    //console.log(containerGalerija.clientHeight)                    
                     if((containerGalerija.scrollHeight - containerGalerija.scrollTop === containerGalerija.clientHeight)) {
                         loadedImages = imgsToLoad
                         imgsToLoad = imgsToLoad + Math.round(counterUrlSlika)
@@ -182,9 +161,10 @@ function galerija(folderSlike, counterImgs, counterLoadedImgs) {
                 }
 
                 delBtnImg.addEventListener('click', event => {
-                    db.collection(`${urlSlike}`).doc(`${slike.name}`).delete()
 
-                    let deleteRef = storage.ref().child(`${urlSlike}/${slike.name}`)                            
+                    db.collection(`${folderSlike}`).doc(`${slike.name}`).delete()
+
+                    let deleteRef = storage.ref().child(`${folderSlike}/${slike.name}`)                            
                     deleteRef.delete()
                     frameDiv.remove()
                     // console.log(slike.name)
@@ -194,7 +174,7 @@ function galerija(folderSlike, counterImgs, counterLoadedImgs) {
                     counterPopUpImg++
                 
                     if(counterPopUpImg === 1) {
-                        console.log(counterPopUpImg)
+                        // console.log(counterPopUpImg)
                         imageHolder.style.display = 'none'
                         popUpImgHolder.style.display = 'flex'
 
@@ -207,7 +187,8 @@ function galerija(folderSlike, counterImgs, counterLoadedImgs) {
 }
 
 function createFullScreenImg(urlSlike) {
-    console.log(imgsToLoad)
+    // console.log(imgsToLoad)
+    console.log(urlSlike)
 
     let newImg = new Image()
     newImg.src = urlSlike

@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
+    <div class="divfollowus">
+        <span class="logoicon logoiconspan">Follow us:</span>
+        <a href="https://www.facebook.com" target="_blank"><img class="logoicon" width="30px" height="30px" src="../icons/facebook.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="logoicon" width="30px" height="30px" src="../icons/Instagram.png"></a>
+    </div> 
     <header>
         <ul class="responseButton">
             <li><button class="menuBtn responseBtn" onclick="location.href = '../index.html';">POČETNA</button></li>
         </ul>
         <ul class="headBtns">
             <li><button class="headerBtns" onclick="location.href = '../index.html';">POČETNA</button></li>
-            <li><button class="headerBtns" onclick="location.href = '../onama.html';">O NAMA</button></li>
+            <!-- <li><button class="headerBtns" onclick="location.href = '../onama.html';">O NAMA</button></li>
             <li><button class="headerBtns" onclick="location.href = '../galerija.html';">GALERIJA</button></li>
             <li><button class="headerBtns" onclick="location.href = '../prodaja.html';">PRODAJA</button></li>
             <li><button class="headerBtns" onclick="location.href = '../video.html';">VIDEO</button></li>
             <li><button class="headerBtns" onclick="location.href = '../saradnici.html';">SARADNICI</button></li>
             <li><button class="headerBtns" onclick="location.href = '../reference.html';">REFERENCE</button></li>
-            <li><button class="headerBtns" onclick="location.href = '../kontakt.html';">KONTAKT</button></li>
+            <li><button class="headerBtns" onclick="location.href = '../kontakt.html';">KONTAKT</button></li> -->
         </ul>
         <ul class="loginSignin">
             <li><button class="headerBtns" id="login" onclick="location.href = 'login.html'">Log in</button></li>
@@ -67,9 +71,6 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-    let db = firebase.firestore();
-    let storage = firebase.storage()
-    </script>
     let db = firebase.firestore();
     let storage = firebase.storage()
     </script>

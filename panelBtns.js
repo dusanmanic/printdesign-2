@@ -10,8 +10,8 @@ btnsDiv.classList.add('hoverDiv')
 btnsUl.classList.add('hoverBtns')
 btnsDiv.appendChild(btnsUl)
 
-let nizBtns = ['POČETNA', 'slide','galerija', 'prodaja', 'video', 'saradnici', 'reference']
-let nizHref = ['index', 'slide', 'galerijaPanel', 'prodajaPanel', 'videoPanel', 'saradniciPanel', 'referencePanel']
+let nizBtns = ['POČETNA', 'slide','galerija']
+let nizHref = ['index', 'slide', 'galerijaPanel']
 let counterShowHide = 0
 
 for(let i=0; i<nizBtns.length; i++) {
